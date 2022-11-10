@@ -13,6 +13,6 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     TouchBar: typeof import('./src/components/TouchBar.vue')['default']
     VanButton: typeof import('vant/es')['Button']
-    VantButton: typeof import('vant/es')['tButton']
+    VanLoading: typeof import('vant/es')['Loading']
   }
 }

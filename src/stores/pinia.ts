@@ -4,6 +4,7 @@ export const useStore = defineStore('store', {
   state: () => ({
     user: {} as User,
     counter: 0,
+    $loading: false,
   }),
   actions: {
     updateCounter() {
