@@ -1,0 +1,73 @@
+@import url('./font.less');
+@import url('./setting.less');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: 0;
+}
+
+.safe-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  bottom: constant(safe-area-inset-bottom); //为底下圆弧的高度 34px
+  bottom: env(safe-area-inset-bottom); //为底下圆弧的高度 34px
+}
+
+.text-red {
+  color: #fa596d;
+}
+
+.btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 56px !important;
+  border-radius: 16px !important;
+  font-size: 16px !important;
+}
+
+.van-popup--bottom {
+  border-radius: 16px !important;
+}
+
+.nothing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  img {
+    width: 120px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #222;
+    margin-top: 16px;
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.van-button--danger.van-button {
+  background-color: #fa596d;
+}
